@@ -5,6 +5,13 @@
    ========================================================================== */
 
 
+   /* ==========================================================================
+   fonts
+   ========================================================================== */
+   
+   /* font-family: 'Roboto', sans-serif;
+   font-family: 'Montserrat', sans-serif;
+   font-family: 'Playfair Display', serif; */
 
 /* ==========================================================================
    Global styles
@@ -17,15 +24,7 @@
    }
   
 
-   .hero-section{
-       position: relative;
-       min-height: 100%;
-   }
-
-   .hero-section .container-fluid{
-       position: absolute;
-       height: 100%;
-    }
+  
 
     .container-fluid .row{
         position: absolute;
@@ -33,9 +32,9 @@
         width: 100%;
     }
 
-   .jumbotron-fluid.hero-section{
-       background: url('../img/hero_bg.jpg');
-       background-size: cover;
+   
+   .ffspl-section{
+       padding-top: 80px;
    }
 
 
@@ -51,24 +50,23 @@
     }
     
 .headerWrapper{
-    padding:1% 1%;
-    
+    padding: 10px;
+    position:fixed;
+    width:100%;
+    height: 120px;
+    z-index: 3000;
 }    
 
-.headerContent{
-	padding:0;	
-	position:fixed;
-    width:98%;    
+.headerContent {
+    box-sizing: border-box;	
+    width: 100%;     
 	height:100px;
 	z-index:2000;
     opacity:1;
-    background: pink;
+    background:rgba(152,240,244,0.3);
 	}
 
 .logo{
-	/* position:absolute;
-	left:0;
-	top:0; */
 	padding:20px;
 	z-index:2100;}	
 	
@@ -76,18 +74,22 @@ h1.logo a{
 	text-indent:-999%;
 	overflow:hidedn;
 	display:block;
-	height:30px;
-	width: 140px;	
+	height:70px;
+	width: 310px;	
 	margin:10px;
-	background:url(../img/whitelogo24.png) no-repeat;
-	}	
+    background:url(../img/ffspl_logo.png) no-repeat;
+    background-size: contain;
+    }	
+    
+.tagline {
+    position: absolute;
+    top: 120px;    
+    display: inline-block;
+    height: 100px;
+    background: rgba(152,240,244,0.3);
+}
 
-h1.bluelogo a{
-	background:url(../img/blue24.png) no-repeat;}	
 
-h1.whitelogo a{
-	background:url(../img/whitelogo24.png) no-repeat;
-	}
 	
 	
 /* -----------------------------------------
@@ -117,7 +119,7 @@ h1.whitelogo a{
 	display:block;
 	position:relative;
 	top: 45%;
-	-webkit-transform:translate(0,-45%)
+	/* -webkit-transform:translate(0,-45%) */
 	}
 
 .navigation.navToggle li{	
@@ -167,13 +169,48 @@ h1.whitelogo a{
    Navbar Styles
    ========================================================================== */
 
-   .navbar {
-       margin: 0px;
-   }
+  
 
 
 
+   /* ==========================================================================
+   Hero Section
+   ========================================================================== */
 
+   .hero-section{
+        position: relative;
+        min-height: 100%;
+    }
+
+    .hero-section .container-fluid{
+        position: absolute;
+        height: 100%;
+    }
+
+    .jumbotron-fluid.hero-section{
+        background: url('../img/hero_bg.jpg');
+        background-size: cover;
+    }
+ 
+    .hero-text {
+        position: relative;
+    }
+
+    /* .tagline {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        display: inline-block;
+        height: 100px;
+        background: rgba(152,240,244,0.3);
+    } */
+
+    .display-bold{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;    
+    }
 
 
 
@@ -235,8 +272,7 @@ h1.whitelogo a{
    ========================================================================== */
 
    .service-umbrella{
-        margin-top: -200px;
-        padding-bottom: 150px;
+        margin-top: -200px;       
    }
 
    .service-umbrella .list-group-item{
@@ -248,22 +284,10 @@ h1.whitelogo a{
 
    .service-cat{
         background: pink;
-        display: block;
-        
+        display: block;        
     }
 
-    .service-cat.cat2{
-        transform: scale(1.1,1.1);
-        z-index: 900;
-    }
-
-    .service-cat.cat1{
-        transform: translateX(20px);
-    }
-
-    .service-cat.cat3{
-        transform: translateX(-20px);
-    }
+   
 
 
 
@@ -306,6 +330,10 @@ h1.whitelogo a{
 
 
    /* ==========================================================================
+   Screen above 576px - sm
+   ========================================================================== */
+   @media screen and (min-width: 576px) {
+   /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
@@ -321,38 +349,34 @@ h1.whitelogo a{
 
 
 
-
    /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
 
+   }
 
 
 
-   /* ==========================================================================
-   Author's custom styles
+
+
+
+
+/* ==========================================================================
+   Screen above 768px - md
    ========================================================================== */
-
-
-
-   @media screen and (min-width: 750px) {
-
-
-     
-/* -----------------------------------------
-   Navigation
------------------------------------------ */	
+   @media screen and (min-width: 768px) {
+    /* ==========================================================================
+    Navigation
+    ========================================================================== */
+ 
 .navicon{
 	display:none;
 	opacity:0;
 	}
 
-/*desktop*/
-.navigation{
-	
-	display:block;
-	/* position:absolute; */
+.navigation{	
+	display:block;	
 	right:0;
 	top:0;
 	padding:10px 20px;
@@ -383,7 +407,86 @@ h1.whitelogo a{
 	 }
 
 
+   /* ==========================================================================
+   Services Umbrella Section
+   ========================================================================== */
 
+    .service-cat.cat2{
+        transform: scale(1.1,1.1);
+        z-index: 900;
+    }
+
+    .service-cat.cat1{
+        transform: translateX(20px);
+    }
+
+    .service-cat.cat3{
+        transform: translateX(-20px);
+    }
+
+
+
+    /* ==========================================================================
+    Author's custom styles
+    ========================================================================== */
+
+ 
+ 
+ 
+ 
+    }
+
+
+
+    /* ==========================================================================
+   Screen above 992px - lg
+   ========================================================================== */
+   @media screen and (min-width: 992px) {
+    /* ==========================================================================
+    Author's custom styles
+    ========================================================================== */
+ 
+ 
+ 
+ 
+ 
+ 
+    /* ==========================================================================
+    Author's custom styles
+    ========================================================================== */
+ 
+ 
+ 
+ 
+    /* ==========================================================================
+    Author's custom styles
+    ========================================================================== */
+ 
+ 
+    }
+
+
+
+
+
+   /* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+   /* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+   @media screen and (min-width: 750px) {
+
+
+ 
 
 
 
