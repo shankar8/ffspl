@@ -22,9 +22,11 @@
        margin: 0;
        padding: 0;
    }
-  
 
-  
+   h1, .h1, h2, .h2, h3, .h3 {
+       margin: 0;
+   }
+    
 
     .container-fluid .row{
         position: absolute;
@@ -35,10 +37,69 @@
    
    .ffspl-section{
        padding-top: 80px;
+       padding-bottom: 80px;
    }
 
+   .ffspl-section h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+   }
+
+   .ffspl-section p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 200;
+        /* text-transform: uppercase; */
+        margin-bottom: 5px;
+   }
+
+    .ffspl-section h4,  .ffspl-section li {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 300;
+        /* text-transform: uppercase; */
+        
+    }
+
+    .ffspl-section h4{
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1px;        
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        margin: 15px auto;
+        text-align: center;
+    }
+
+    .ffspl-section li{
+        font-weight: 300;
+        font-size: 2.1rem;
+    }
+
+    .section-heading {
+        /* border-bottom: 5px solid yellow; */
+        position: relative;
+        padding-bottom: 65px;
+    }
+
+    .section-heading::after {
+        position: absolute;
+        bottom: 10;
+        left: 50%;        
+        content: '';
+        width: 90px;
+        transform: translateX(-50%);
+        display: block;
+        border-bottom: 10px solid yellow;
+    }
 
 
+    .container{
+        max-width: 1100px;
+    }
    
 /* -----------------------------------------
    Header
@@ -52,18 +113,17 @@
 .headerWrapper{
     padding: 10px;
     position:fixed;
-    width:100%;
-    height: 120px;
+    width:100%;    
     z-index: 3000;
 }    
 
 .headerContent {
     box-sizing: border-box;	
     width: 100%;     
-	height:100px;
+	/* height: 100px; */
 	z-index:2000;
     opacity:1;
-    background:rgba(152,240,244,0.3);
+    background:rgba(255, 255, 255, 0.7);
 	}
 
 .logo{
@@ -72,7 +132,7 @@
 	
 h1.logo a{
 	text-indent:-999%;
-	overflow:hidedn;
+	overflow:hidden;
 	display:block;
 	height:70px;
 	width: 310px;	
@@ -86,7 +146,27 @@ h1.logo a{
     top: 120px;    
     display: inline-block;
     height: 100px;
-    background: rgba(152,240,244,0.3);
+    padding: 0 30px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.tagline p {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 5px;
+    color: rgba(29,163,176,1);
+}
+
+.hero-text h3{
+    font-family: 'Montserrat', sans-serif;
+    /* font-size: 2.2rem; */
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-align: center;
+    color: white;
+    padding-right: 10px;
 }
 
 
@@ -222,6 +302,10 @@ h1.logo a{
 
    }
 
+   .service-area h4{
+        color: grey;
+    }
+
    .service-area col{
        width: 180px;
        height: 180px;
@@ -241,28 +325,17 @@ h1.logo a{
     .jumbotron-fluid.aboutus-section{
         background: url('../img/hero_bg.jpg');
         background-size: cover;
-        padding-bottom: 250px;
+        padding-bottom: 500px;
     }
 
-    .section-heading {
-        /* border-bottom: 5px solid yellow; */
-        position: relative;
-        padding-bottom: 5px;
-    }
+   
 
-    .section-heading::after {
-        position: absolute;
-        bottom: 0;
-        left: 50%;        
-        content: '';
-        width: 90px;
-        transform: translateX(-50%);
-        display: block;
-        border-bottom: 10px solid yellow;
-    }
-
-    .aboutus-section hr{
+    .aboutus-section hr {
         border-color: white;
+    }
+
+    .aboutus-section p {
+        padding-bottom: 60px;
     }
 
 
@@ -271,21 +344,73 @@ h1.logo a{
    Services Umbrella Section
    ========================================================================== */
 
-   .service-umbrella{
-        margin-top: -200px;       
+   .service-umbrella {
+        margin-top: -500px;
+        max-width: 450px;   
    }
 
+   .service-umbrella hr {
+       margin-top: 110px;
+   }
+
+   .service-umbrella p{
+       padding-bottom: 40px;
+   }
+
+   .service-umbrella .card-body{
+       padding-bottom: 30px;
+   }  
+
    .service-umbrella .list-group-item{
-        padding: .75rem 1.25rem;
+        padding: 10px 15px;
         margin-bottom: -1px;
         background-color: rgba(0,0,0,0); 
         border: 1px solid rgba(0,0,0,0);
    }
 
    .service-cat{
-        background: pink;
-        display: block;        
+        display: block;
+        position: relative; 
+        overflow: hidden;
+        background: skyblue;
+        z-index: 900;
+        border-radius: 6px;  
+    }    
+
+    .service-cat h4{
+        font-size: 2.1rem;
+        font-weight: 600;
     }
+
+    .service-cat h4, .service-cat li {
+        z-index: 910;
+    }
+
+    .service-cat::after{
+        position: absolute;
+        top: 0;
+        left: 0;        
+        content: '';
+        width: 150%;
+        height: 150%;        
+        display: block;
+        background: rgba(152,240,244,0.3);
+        transform: translate(-35%,-55%) rotate(70deg);        
+   }
+
+   .cat1{
+        background: rgba(0,191,243,1);    
+    }
+
+   .cat2{
+        background: rgba(109,207,246,1);    
+   }
+
+   .cat3{
+        background: rgba(0,191,243,1);    
+    }
+
+   
 
    
 
@@ -296,9 +421,34 @@ h1.logo a{
    We Assure Quality Section
    ========================================================================== */
 
-   .quality-section{
-
+   .quality-section {
+        padding-top: 0;
+        padding-bottom: 0;
+        overflow: hidden;
+        background: url("../img/star_bg.jpg") right top no-repeat;
+        /* background-size: contain; */
    }
+
+   .quality-section hr{
+        margin-top: 60px;
+        margin-bottom: 0px;
+   }
+
+   .quality-section ul{
+       list-style-type: none;
+   }
+   
+   .quality-section li{
+        position: relative;
+        padding-bottom: 20px;
+   }
+
+   .quality-section li span{
+        position: absolute;
+        left: -40px;
+        top: 4px;
+        color: rgba(29,163,176,1);
+    }
 
 
    /* ==========================================================================
@@ -306,21 +456,59 @@ h1.logo a{
    ========================================================================== */
 
     .client-section{
-        
+        max-width: 1000px;
     }
 
     .client-section .col-6 {
-        padding-bottom: 30px;
+        padding: 0px 10px 20px;
     }
 
+    .client-box {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        border: 1px solid grey;
+    }
+
+    .client-box .img-thumbnail {
+        border: none;
+    }
 
    /* ==========================================================================
     Footer Section
    ========================================================================== */
 
-    footer{
-        background: pink;
+    footer {
+        background: rgba(29,163,176,1);        
     }
+
+    footer hr{
+        border-color: white;
+    }
+   
+    .social-contact{
+        padding: 50px 0px 150px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.2rem;
+        font-weight: 300;
+        color: white;
+    }
+
+    /* .social-contact p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.2rem;
+        font-weight: 300;
+        color: white;
+    } */
+
+    .legal {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
 
 
 
@@ -334,7 +522,7 @@ h1.logo a{
    ========================================================================== */
    @media screen and (min-width: 576px) {
    /* ==========================================================================
-   Author's custom styles
+   Header section
    ========================================================================== */
 
 
@@ -379,7 +567,8 @@ h1.logo a{
 	display:block;	
 	right:0;
 	top:0;
-	padding:10px 20px;
+    padding:10px 20px;
+    margin: 0;
 	}	
 
 .navigation li{	
@@ -389,8 +578,12 @@ h1.logo a{
 	}	
 	
 .navigation li a {
-	text-decoration:none;
-	font-size:18px;	
+    text-decoration:none;
+    font-weight: 500;
+    font-size: 2rem;
+    color: grey;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 	}	
 
 .whitenav li a {
@@ -411,9 +604,13 @@ h1.logo a{
    Services Umbrella Section
    ========================================================================== */
 
+   .service-umbrella{
+        max-width: 1140px;   
+    }
+
     .service-cat.cat2{
         transform: scale(1.1,1.1);
-        z-index: 900;
+        z-index: 905;     
     }
 
     .service-cat.cat1{
@@ -446,7 +643,13 @@ h1.logo a{
     Author's custom styles
     ========================================================================== */
  
- 
+      /* ==========================================================================
+   Services Umbrella Section
+   ========================================================================== */
+
+   .service-umbrella{
+        max-width: 1100px;   
+    }
  
  
  
@@ -483,15 +686,7 @@ h1.logo a{
 
 
 
-   @media screen and (min-width: 750px) {
-
-
- 
-
-
-
-   }
-
+   
 
 
 
