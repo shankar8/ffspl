@@ -27,15 +27,20 @@ $('.navigation.navToggle li a').click(function() {
 //------------------scroll animations--------------------------------------//
 
 
-var heroTextTop = $('#home .hero-text h3').offset().top;
-var heroSectionBottom = $('.hero-section').height(),
-    serviceUmbrellaTop = $('.service-umbrella').offset().top;
 
-    // console.log(serviceUmbrellaTop);
+
+
+
+
+   
+
 
 $(window).scroll(function(){
-    var wScroll = $(this).scrollTop();
+    var wScroll = $(this).scrollTop(),
+    heroSectionBottom = $('.hero-section').height();
+    
 
+//animate tagline
     if (wScroll > 100){
         $('.tagline').addClass('gone');
     } else{
@@ -45,6 +50,10 @@ $(window).scroll(function(){
     // console.log(heroTextHeight);
     // console.log(heroSectionBottom);
 
+
+
+
+// animate header class
     if (wScroll > heroSectionBottom - 110) {
         // console.log('tata');
         $('.headerBg').addClass('moveUp');
@@ -55,51 +64,23 @@ $(window).scroll(function(){
     }
 
 
-// sevice area animation
-    if(wScroll > $('.service-area').offset().top - ($(window).height() / 1.2)) {
-            
-        $('.service-icons').each(function(i){
-            setTimeout(function(){
-            $('.service-img-box').eq(i).addClass('is-showing');
-            }, (700 * (Math.exp(i * 0.14))) - 700);
-        });
-
-    }
-
-// client section animation
-    if(wScroll > $('.client-section').offset().top - ($(window).height() / 1.2)) {
-        
-    $('.client-box').each(function(i){
-        setTimeout(function(){
-        $('.client-box').eq(i).addClass('is-showing');
-        }, (700 * (Math.exp(i * 0.14))) - 700);
-    });
-
-}
-
-        
-//service umbrella animation
-
-if (wScroll > serviceUmbrellaTop - 400) {
-    // console.log('tata');
-    $('.cat1').addClass('assemble');
-    $('.cat2').addClass('assemble');
-    $('.cat3').addClass('assemble');
-}else{
-    // $('.headerBg').removeClass('moveUp');
-    
-}
 
 
 
 
 
 
-});
 
 
 
-});
+
+
+
+});//end of windows scroll
+
+
+
+});//end of windows ready function
 
 
 
