@@ -226,8 +226,10 @@
     .navToggle {
         display:block;
         position:relative;
+        padding: 0px;
         top: 45%;
-        -webkit-transform:translate(0,-45%)
+        left: 50%;
+        -webkit-transform:translate(-50%,-45%)
         }
 
     .navigation.navToggle li{	
@@ -363,7 +365,7 @@
     }
 
     .jumbotron-fluid.aboutus-section{
-        background: url('../img/about_us_bg.jpg');
+        background: url('../img/about_us_bg.jpg') center center;
         background-size: cover;
         padding-bottom: 500px;
     }
@@ -691,6 +693,15 @@
         background-size: cover;
     }
 
+    /* ==========================================================================
+   About Us Section
+   ========================================================================== */
+
+
+    .jumbotron-fluid.aboutus-section {
+        background: url(../img/about_us_bg.jpg);
+        background-size: cover;        
+    }
 
    /* ==========================================================================
    Services Umbrella Section
