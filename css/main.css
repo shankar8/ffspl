@@ -208,11 +208,14 @@
         position:fixed;
         width:100%;
         height:100vh;
-        background: #1EAEDB;
+        background: rgba(29,163,176,1);
         opacity:0.9;
         top:0;
         left:0;
+        right: 0;
+        bottom: 0;
         z-index: 2100;
+        overflow: hidden;
     }
 
     .navigation{
@@ -224,7 +227,7 @@
         display:block;
         position:relative;
         top: 45%;
-        /* -webkit-transform:translate(0,-45%) */
+        -webkit-transform:translate(0,-45%)
         }
 
     .navigation.navToggle li{	
@@ -291,7 +294,7 @@
 
   
     .jumbotron-fluid.hero-section{
-        background: url('../img/hero_bg.jpg');
+        background: url('../img/hero_bg.jpg') center center;
         background-size: cover;
     }
  
@@ -674,7 +677,19 @@
  #nav .current a {
 	 font-size:20px;
 	 font-weight:bold;
-	 }
+     }
+  
+
+      /* ==========================================================================
+   Hero Section Section
+   ========================================================================== */
+
+
+
+     .jumbotron-fluid.hero-section{
+        background: url('../img/hero_bg.jpg');
+        background-size: cover;
+    }
 
 
    /* ==========================================================================

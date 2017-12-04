@@ -69,10 +69,20 @@
 
 
    /* ==========================================================================
-   About Us Section
+   contact address Section
    ========================================================================== */
 
+  .contact-address {
+    padding-bottom: 30px;
+  }
    
+  .contact-address h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
 
 
    /* ==========================================================================
@@ -86,7 +96,43 @@
    We Assure Quality Section
    ========================================================================== */
 
-  
+  .contact-form {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  .indicates-required{
+    font-size: 1rem;
+  }
+
+  .mc-field-group {
+    padding: 10px 0px;
+  }
+
+  .mc-field-group label{
+    width: 98%;
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+
+  .mc-field-group input{
+    width:98%;
+  }
+
+  #mce-MMERGE3{
+    height: 80px;
+  }
+
+  #mc-embedded-subscribe{
+    background: rgba(29,163,176,1);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+  }
 
 
    /* ==========================================================================
@@ -154,7 +200,13 @@
    /* ==========================================================================
    Services Umbrella Section
    ========================================================================== */
+   .mc-field-group label{
+    width: 38%;   
+  }
 
+  .mc-field-group input{
+    width:60%;
+  }
   
 
 

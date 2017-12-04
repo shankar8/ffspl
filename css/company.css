@@ -131,6 +131,10 @@
         /* background-size: contain; */
     }
 
+    .core-value-section p{
+        padding-bottom: 30px;
+    }
+
     .core-value-section ul {
         list-style-type: none;
     }
