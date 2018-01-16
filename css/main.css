@@ -123,8 +123,7 @@
     }   
 
     .headerBg {
-        background: rgba(255, 255, 255, 1);
-        
+        background: rgba(255, 255, 255, 1);        
         position: absolute;
         top:10px;
         left:10px;
@@ -384,7 +383,7 @@
         padding-bottom: 60px;
     }
 
-    .aboutus-section .section-heading::after {
+    #home .aboutus-section .section-heading::after {
         border-bottom: 10px solid rgba(255,255,255,.8);
     }
 
@@ -399,7 +398,7 @@
         max-width: 450px;   
    }
 
-   .service-umbrella .section-heading::after {
+   #home .service-umbrella .section-heading::after {
         border-bottom: 10px solid rgba(255,255,255,.8);
    }
 

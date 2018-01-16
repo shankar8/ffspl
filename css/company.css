@@ -79,6 +79,10 @@
     margin-bottom: 0px; 
     padding: 0px 10px;     
    }
+
+   /* .aboutus-section .section-heading::after {
+        border-bottom: 10px solid rgba(255,255,255,.8);
+    } */
    
 
 
@@ -88,9 +92,9 @@
 
     
         .jumbotron-fluid.vision-mission-section{
-            background: url('../img/about_us_bg.jpg') center center;
-            background-size: cover;            
-        }       
+            background: linear-gradient( 90deg, rgba(4, 255, 201, 0.9) 0%, rgba(0, 140, 255, 0.8) 100%  ),url(../img/about_us_bg2.jpg) center top no-repeat;
+            background-size: cover;          
+        }
     
         .vision-mission-section hr {
             border-color: white;
@@ -98,6 +102,10 @@
     
         .vision-mission-section p {
             padding-bottom: 60px;
+        }
+
+        .vision-mission-section .section-heading::after {
+            border-bottom: 10px solid rgba(255,255,255,.8);
         }
 
 
@@ -224,10 +232,7 @@
    Vision Mission Section
    ========================================================================== */
 
-        .jumbotron-fluid.vision-mission-section{
-            background: url('../img/about_us_bg.jpg');
-            background-size: cover;           
-        }     
+           
   
 
 
