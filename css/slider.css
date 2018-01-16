@@ -1,0 +1,422 @@
+/*-------------------------------------------------------------------------
+global styles
+--------------------------------------------------------------------------*/
+
+/*box sizing*/
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+
+
+/*-------------------------------------------------------------------------
+Client Section - For home page only
+---------------------------------------------------------------------------*/
+
+.clientSection{
+    position: relative;
+    background: white ;
+    width: 100%;
+    height: 33.3333333333333vw;
+    margin-top: 120px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+.flex-viewport {
+  overflow: hidden;
+}
+
+h2.clientTitle{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+    top: -70px;
+}
+
+.navBoxLeft{
+    display: none;
+    position: absolute;
+    height:100%;
+    width: 12.5%;
+    top:0;
+    left:0;
+    background: white;
+    border-right: 0.1px solid #999;
+}
+
+.navBoxRight{
+    display: none;
+    position: absolute;
+    height:100%;
+    width: 12.5%;
+    top:0;
+    right:0;
+    background: white;
+    border-left: 1px solid #999;
+}
+
+.clientBox{
+    margin:0px;
+}
+
+
+.clientBox .flex-direction-nav{
+    display: none;
+}
+
+.clientBox .flex-direction-nav {
+*height: 0;
+}
+
+.clientBox .flex-direction-nav a {
+text-decoration: none;
+display: block;
+width: 40px;
+height: 40px;
+margin: -20px 0 0;
+position: absolute;
+top: 50%;
+z-index: 10;
+overflow: hidden;
+opacity: 1;
+cursor: pointer;
+color: rgba(0, 0, 0, 0.8);
+text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.clientBox .flex-direction-nav a:before {
+font-family: "Ionicons";
+font-size: 40px;
+display: inline-block;
+content: '\f361';
+color: rgba(0, 0, 0, 0.8);
+text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+.clientBox .flex-direction-nav a.flex-next:before {
+content: '\f363';
+}
+.clientBox .flex-direction-nav .flex-prev {
+left: -9%;
+}
+.clientBox .flex-direction-nav .flex-next {
+right: -9%;
+text-align: right;
+}
+.clientBox:hover .flex-direction-nav .flex-prev {
+opacity: 1;
+left: -9%;
+}
+.clientBox:hover .flex-direction-nav .flex-prev:hover {
+opacity: 1;
+}
+.clientBox:hover .flex-direction-nav .flex-next {
+opacity: 1;
+right: -9%;
+}
+
+.clientBox:hover .flex-direction-nav .flex-next:hover {
+opacity: 1;
+}
+
+.flex-direction-nav .flex-disabled {
+opacity: 1!important;
+filter: alpha(opacity=0);
+cursor: default;
+z-index: -1;
+}
+
+.clientBox .slides li {
+    margin-right: 0px: !important
+}
+
+div.clientBox{
+    border: 0px;
+    border-radius: 0px;
+    height:100%;
+}
+
+.clientBox .flex-viewport, .clientBox .slides{
+    display: block;
+    height:100%;
+}
+
+
+.clientBox .slides li{
+    box-sizing:content-box;
+    display:block;
+    position: relative;
+    height:100%;
+    border-left: 0.5px solid #999;
+
+}
+
+.clientBox .slides li div{
+    display: block;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+}
+
+
+.abb {
+    background: url("../images/abb.png") center center no-repeat;
+    background-size: contain;
+    height:70%;
+    width:70%;
+}
+
+.abbott {
+    background: url("../images/abbott.png") center center no-repeat;
+    background-size: contain;
+    height:90%;
+    width:90%;
+}
+
+.airlounge {
+    background: url("../images/airlounge.png") center center no-repeat;
+    background-size: contain;
+    height:80%;
+    width:80%;
+}
+
+.bectonDickson {
+    background: url("../images/bectonDickson.png") center center no-repeat;
+    background-size: contain;
+    height:80%;
+    width:80%;
+}
+
+.bmw {
+    background: url("../images/bmw.png") center center no-repeat;
+    background-size: contain;
+    height:60%;
+    width:60%;
+}
+
+.caterpillar {
+    background: url("../images/caterpillar.png") center center no-repeat;
+    background-size: contain;
+    height:80%;
+    width:80%;
+}
+
+.celgene {
+    background: url("../images/celgene.png") center center no-repeat;
+    background-size: contain;
+    height:70%;
+    width:70%;
+}
+
+.citizens {
+    background: url("../images/citizens.png") center center no-repeat;
+    background-size: contain;
+    height:80%;
+    width:80%;
+}
+
+.datalogic {
+    background: url("../images/datalogic.png") center center no-repeat;
+    background-size: contain;
+    height:90%;
+    width:90%;
+}
+
+.delta {
+    background: url("../images/delta.png") center center no-repeat;
+    background-size: contain;
+    height:90%;
+    width:90%;
+}
+
+.discovery {
+    background: url("../images/discovery.png") center center no-repeat;
+    background-size: contain;
+    height:90%;
+    width:90%;
+}
+
+.disney {
+    background: url("../images/disney.png") center center no-repeat;
+    background-size: contain;
+    height:80%;
+    width:80%;
+}
+
+.fpl {
+    background: url("../images/fpl.png") center center no-repeat;
+    background-size: contain;
+    height:60%;
+    width:60%;
+}
+
+.henkel {
+    background: url("../images/henkel.png") center center no-repeat;
+    background-size: contain;
+    height:70%;
+    width:70%;
+}
+
+.humana {
+    background: url("../images/humana.png") center center no-repeat;
+    background-size: contain;
+    height:80%;
+    width:80%;
+}
+
+.mercedes {
+    background: url("../images/mercedes.png") center center no-repeat;
+    background-size: contain;
+    height:80%;
+    width:80%;
+}
+
+.mtbank {
+    background: url("../images/mtBank.png") center center no-repeat;
+    background-size: contain;
+    height:80%;
+    width:80%;
+}
+
+.novartis {
+    background: url("../images/novartis.png") center center no-repeat;
+    background-size: contain;
+    height:80%;
+    width:80%;
+}
+
+.pgne {
+    background: url("../images/pgne.png") center center no-repeat;
+    background-size: contain;
+    height:50%;
+    width:50%;
+}
+
+.philips {
+    background: url("../images/philips.png") center center no-repeat;
+    background-size: contain;
+    height:50%;
+    width:50%;
+}
+
+.ricoh {
+    background: url("../images/ricoh.png") center center no-repeat;
+    background-size: contain;
+    height:80%;
+    width:80%;
+}
+
+.symantec {
+    background: url("../images/symantec.png") center center no-repeat;
+    background-size: contain;
+    height:80%;
+    width:80%;
+}
+
+.total {
+    background: url("../images/total.png") center center no-repeat;
+    background-size: contain;
+    height:60%;
+    width:60%;
+}
+
+.unisys {
+    background: url("../images/unisys.png") center center no-repeat;
+    background-size: contain;
+    height:80%;
+    width:80%;
+}
+
+.ups {
+    background: url("../images/ups.png") center center no-repeat;
+    background-size: contain;
+    height:55%;
+    width:55%;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 700px) {
+    /* For tablets: */
+
+
+
+
+
+
+/*-------------------------------------------------------------------------
+Client Section -Only home page
+---------------------------------------------------------------------------*/
+
+.clientSection{
+    height: 16.666666666666667vw;
+}
+
+.navBoxLeft, .navBoxRight{
+    display: block;
+  cursor: pointer;
+}
+
+.clientBox .flex-direction-nav{
+    display: block;
+}
+
+.clientBox{
+    margin:0 12.5%;
+}
+
+
+
+}
+
+
+/*-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+Desktop Styles Section
+---------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+
+
+
+@media only screen and (min-width: 1000px) {
+    /* For desktops and wide screens */
+
+
+
+/*-------------------------------------------------------------------------
+Client Section - For  home page only
+---------------------------------------------------------------------------*/
+
+.clientSection {
+    height: 12.5vw;
+}
+
+
+
+}

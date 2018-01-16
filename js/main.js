@@ -1,3 +1,4 @@
+
 $(function() {
 
 
@@ -67,15 +68,15 @@ $(window).scroll(function(){
     }
 
 // client section animation
-    if(wScroll > $('.client-section').offset().top - ($(window).height() / 1.2)) {
+    // if(wScroll > $('.client-section').offset().top - ($(window).height() / 1.2)) {
         
-    $('.client-box').each(function(i){
-        setTimeout(function(){
-        $('.client-box').eq(i).addClass('is-showing');
-        }, (700 * (Math.exp(i * 0.14))) - 700);
-    });
+    // $('.client-box').each(function(i){
+    //     setTimeout(function(){
+    //     $('.client-box').eq(i).addClass('is-showing');
+    //     }, (700 * (Math.exp(i * 0.14))) - 700);
+    // });
 
-}
+// }
 
         
 //service umbrella animation
@@ -91,11 +92,7 @@ if (wScroll > serviceUmbrellaTop - 400) {
 }
 
 
-
-
-
-
-});
+});//end of windows scroll
 
 
 

@@ -54,11 +54,10 @@
    Hero Section
    ========================================================================== */
 
-   .jumbotron-fluid.hero-section {
-        background: url(../img/hero_bg.jpg) center center;
-        background-size: cover;
-    }
-
+   .jumbotron-fluid.hero-section{
+    background: linear-gradient(135deg, rgba(4, 255, 201, 0.6) 10%, rgba(0, 140, 255, 0.5) 80% ),url(../img/hero_bg1.jpg) center center no-repeat;
+    background-size: cover;
+}
 
 
 
@@ -76,30 +75,29 @@
     padding-bottom: 30px;
   }
    
-  .contact-address h5{
+  .contact-section h5{
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 200;
+    font-size: 2.1rem;
+    font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 5px;
   }
 
-
-   /* ==========================================================================
-   Services Umbrella Section
-   ========================================================================== */
-
-  
+  .contact-section p{
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
 
 
-     /* ==========================================================================
+
+  /* ==========================================================================
    We Assure Quality Section
    ========================================================================== */
 
   .contact-form {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 5px;
   }
@@ -115,7 +113,7 @@
   .mc-field-group label{
     width: 98%;
     font-size: 1.5rem;
-    font-weight: 200;
+    font-weight: 400;
     text-transform: uppercase;
   }
 
