@@ -44,7 +44,7 @@
    .ffspl-section h3 {
         font-family: 'Montserrat', sans-serif;
         font-size: 3rem;
-        font-weight: 300;
+        font-weight: 400;
         text-transform: uppercase;
         margin-bottom: 5px;
    }
@@ -52,7 +52,7 @@
    .ffspl-section p {
         font-family: 'Montserrat', sans-serif;
         font-size: 2.5rem;
-        font-weight: 300;
+        font-weight: 400;
         /* text-transform: uppercase; */
         line-height: 140%;
         margin-bottom: 5px;
@@ -90,7 +90,7 @@
 
     .section-heading::after {
         position: absolute;
-        bottom: 10;
+        /* bottom: 10px; */
         left: 50%;        
         content: '';
         width: 90px;
@@ -101,7 +101,7 @@
     }
 
     .section-heading.white-heading::after{
-        border-bottom: 10px solid rgba(255,255,255,.8);
+        border-bottom: 10px solid rgba(255,255,255,.9);
     }
 
 
@@ -410,7 +410,7 @@
         display: block;
         position: relative; 
         overflow: hidden;
-        background: skyblue;
+        background: rgb(157, 67, 241);
         z-index: 900;
         border-radius: 6px;
         -webkit-box-shadow: 0px 9px 13px -1px rgba(0,0,0,0.25);
@@ -440,20 +440,42 @@
         transform: translate(-35%,-55%) rotate(70deg);        
    }
 
-   .cat1 {
-        /* background: rgba(0,191,243,1);     */
-        background: rgb(255, 21, 130); 
+   /* .cat1 {
+        background: rgba(255, 21, 130,0.9); 
     }
 
    .cat2{
-        /* background: rgba(109,207,246,1);   */
-        background: rgba(131,15,227,1);
+        background: rgba(131,15,227,0.9);
    }
 
    .cat3{
-        /* background: rgba(0,191,243,1);    */
-        background: rgb(255, 21, 130); 
+        background: rgba(255, 21, 130, 0.9); 
+    } */
+
+    .cat1 {
+        background: rgba(255, 54, 150,1); 
     }
+
+   .cat2{
+        /* background: rgba(118,118,240,1); */
+        background: rgba(157,67,241,1);
+   }
+
+   .cat3{
+        background: rgba(255, 54, 150, 1); 
+    }
+
+    /* .cat1 {
+        background: rgba(255, 119, 116,1); 
+    }
+
+   .cat2{
+        background: rgba(143,102,255,1);
+   }
+
+   .cat3{
+        background: rgba(255, 119, 116, 1); 
+    } */
 
    
 
