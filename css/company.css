@@ -72,7 +72,7 @@
 
    
 
-   #company .aboutus-section p{
+   .company.aboutus-section p{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
     font-weight: 500;    
@@ -80,10 +80,6 @@
     padding: 0px 10px;     
    }
 
-   /* .aboutus-section .section-heading::after {
-        border-bottom: 10px solid rgba(255,255,255,.8);
-    } */
-   
 
 
    /* ==========================================================================
@@ -103,10 +99,7 @@
         .vision-mission-section p {
             padding-bottom: 60px;
         }
-
-        .vision-mission-section .section-heading::after {
-            border-bottom: 10px solid rgba(255,255,255,.8);
-        }
+     
 
 
 

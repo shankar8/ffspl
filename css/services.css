@@ -107,13 +107,7 @@
       margin-bottom: 80px;
   }
 
-  /* .quality-section .section-heading::after{
-    border-bottom: white;
-  } */
-
-  .quality-section .section-heading::after {
-        border-bottom: 10px solid rgba(255,255,255,.8);
-    }
+  
   
   
 
@@ -216,10 +210,7 @@
     Assure Quality Section
     ========================================================================== */
 
-    .assure-quality-section {
-        /* background: url(../img/star_bg.jpg) right 80px no-repeat; */
-    }
-   
+ 
 
 
      /* ==========================================================================

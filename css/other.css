@@ -1,0 +1,344 @@
+
+   /* ==========================================================================
+   ==========================================================================
+   ==========================================================================
+   Company Page
+   ==========================================================================
+   ==========================================================================
+   ========================================================================== */
+
+  
+
+
+/* ==========================================================================
+Hero Section -- common to all subpages
+========================================================================== */
+
+    .hero-section{
+        min-height: 400px;
+    }
+
+   .jumbotron-fluid.hero-section{
+        background: linear-gradient(135deg, rgba(4, 255, 201, 0.6) 10%, rgba(0, 140, 255, 0.5) 80% ),url(../img/hero_bg1.jpg) center center no-repeat;
+        background-size: cover;
+    }
+
+
+
+/* ==========================================================================
+About Us Section
+========================================================================== */
+
+    .company.aboutus-section p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 500;    
+        margin-bottom: 0px; 
+        padding: 0px 10px;     
+    }
+
+
+/* ==========================================================================
+Vision Section
+========================================================================== */
+
+
+    .jumbotron-fluid.vision-mission-section{
+        background: linear-gradient( 90deg, rgba(4, 255, 201, 0.9) 0%, rgba(0, 140, 255, 0.8) 100%  ),url(../img/about_us_bg2.jpg) center top no-repeat;
+        background-size: cover;          
+    }
+
+    .vision-mission-section hr {
+        border-color: white;
+    }
+
+    .vision-mission-section p {
+        padding-bottom: 60px;
+    }
+ 
+
+
+/* ==========================================================================
+Mission Section
+========================================================================== */
+
+
+    .mission-heading {
+    padding-top: 80px;
+    }
+
+    .mission-section p {
+    padding:0px;
+    }
+
+
+
+
+ /* ==========================================================================
+Our Core Value Section
+========================================================================== */
+
+    .core-value-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        overflow: hidden;    
+    }
+
+    .core-value-section p{
+        padding-bottom: 30px;
+    }
+
+    .core-value-section ul {
+        list-style-type: none;
+    }
+
+    .core-value-section li {
+        position: relative;
+        padding-bottom: 20px;
+    }
+
+    .core-value-section li:last-child {
+    padding-bottom: 0px;
+    }
+
+    .core-value-section li span {
+        position: absolute;
+        left: -40px;
+        top: 6px;
+        color: rgba(29,163,176,1);
+    }
+
+
+
+
+
+   /* ==========================================================================
+   Services Umbrella Section
+   ========================================================================== */
+
+
+   .service-umbrella {
+    margin-top: 0px;
+    padding-top: 0px;    
+}
+
+.service-umbrella hr {
+    margin-top: 0px;
+    margin-bottom: 80px;
+}
+  
+
+
+
+   /* ==========================================================================
+ Quality Section
+ ========================================================================== */
+
+.jumbotron-fluid.quality-section {
+    margin-top: -400px;
+    padding-top: 400px;
+    padding-bottom: 80px;
+    background: linear-gradient( 90deg, rgba(4, 255, 201, 0.9) 0%, rgba(0, 140, 255, 0.8) 100%  ),url(../img/about_us_bg2.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+.quality-section hr {
+    margin-top: 0px;
+    margin-bottom: 80px;
+}
+
+
+
+
+
+
+ /* ==========================================================================
+ Assure Quality Section
+ ========================================================================== */
+
+
+
+.assure-quality-section ul{
+    list-style-type: none;
+}
+
+.assure-quality-section li{
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.assure-quality-section li span{
+    position: absolute;
+    left: -40px;
+    top: 4px;
+    color: rgba(29,163,176,1);
+}
+
+
+
+
+   /* ==========================================================================
+   contact address Section
+   ========================================================================== */
+
+   .contact-address {
+    padding-bottom: 30px;
+  }
+   
+  .contact-section h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  .contact-section p{
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+
+
+  /* ==========================================================================
+   Contact Form Section
+   ========================================================================== */
+
+  .contact-form {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  .indicates-required{
+    font-size: 1rem;
+  }
+
+  .mc-field-group {
+    padding: 10px 0px;
+  }
+
+  .mc-field-group label{
+    width: 98%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .mc-field-group input{
+    width:98%;
+  }
+
+  #mce-MMERGE3{
+    height: 80px;
+  }
+
+  #mc-embedded-subscribe{
+    background: rgba(29,163,176,1);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+  }
+
+  #mc_embed_signup h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+Screen above 576px - sm
+========================================================================== */
+@media screen and (min-width: 576px) {
+
+/* ==========================================================================
+Header section
+========================================================================== */
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+Screen above 768px - md
+========================================================================== */
+@media screen and (min-width: 768px) {
+    
+
+
+/* ==========================================================================
+Services Umbrella Section
+========================================================================== */
+    .service-umbrella {        
+        padding-bottom: 120px;     
+    }
+
+
+
+
+/* ==========================================================================
+Contact Form Section
+========================================================================== */
+    .mc-field-group label{
+        width: 38%;   
+    }
+
+    .mc-field-group input{
+        width:60%;
+    }
+
+
+
+
+
+}
+
+
+
+/* ==========================================================================
+Screen above 992px - lg
+========================================================================== */
+@media screen and (min-width: 992px) {
+
+
+/* ==========================================================================
+Author's custom styles
+========================================================================== */
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
